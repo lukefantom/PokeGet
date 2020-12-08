@@ -6,10 +6,9 @@ import PokemonViewer from "../PokemonViewer";
 
 function App() {
   const [id, setId] = useState(Math.floor(Math.random() * 151) + 1);
-  console.log(id);
 
   function handleClick() {
-    // TODO: Set id to be random number between 1 and 151
+    // Set id to be random number between 1 and 151
     const randomNumber = Math.floor(Math.random() * 151) + 1;
     setId(randomNumber);
   }

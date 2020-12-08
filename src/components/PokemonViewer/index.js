@@ -24,12 +24,9 @@ function PokemonViewer({ id }) {
           .toUpperCase()}${data.types[0].type.name.slice(1)}`,
       };
 
-      setColor(getPokeHex(newPokemon.type));
+      setColor(getPokeHex(newPokemon.type.toLowerCase()));
 
-      console.log(data);
-      console.log(newPokemon);
       setPokemon(newPokemon);
-      console.log(newPokemon.type);
     }
 
     getPokemon();
