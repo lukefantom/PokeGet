@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./spinkit.css";
+import Button from "../Button/button";
 
 import PokemonViewer from "../PokemonViewer";
 
@@ -24,27 +25,12 @@ function App() {
   return (
     <div className="App">
       <PokemonViewer id={id} />
-      <button
-        onClick={() => {
-          decrementClick();
-        }}
-      >
-        ⬅
-      </button>
-      <button
-        onClick={() => {
-          handleClick();
-        }}
-      >
-        Get Random Pokemon
-      </button>
-      <button
-        onClick={() => {
-          incrementClick();
-        }}
-      >
-        ➡
-      </button>
+      <div className="buttonContainer">
+        <Button handleClick={decrementClick} text={"⬅"} />
+        <Button handleClick={handleClick} text={"Random Pokémon"} />
+        <Button handleClick={incrementClick} text={"➡"} />
+      </div>
+
       {/* <audio controls={true} autoplay={true}>
         <source
           src="../../../public/Pokémon Red Blue Yellow Music (GameBoy) - Opening Theme Song Extended.mp3"
