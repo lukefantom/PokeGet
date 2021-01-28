@@ -1,25 +1,25 @@
-# UseEffect Workshop.
+# PokéGet
 
-We will be using our new found useEffect skills to make a random pokemon generator. We are going to make a component PokemonViewer, which will take in a prop of `id`. When the `id` prop changes, our component will perform an HTTP request to get the pokemon of that id, and then display the data
+Built during the React useEffect workshop at the School of Code
 
-## Task 1:
+## Our brief
 
-In `App/index.js`, complete the TODOS so that when the button is clicked, the id changes to a random number between 1 and 151, and that id is handed down as a prop to `PokemonViewer`.
-
-## Task 2:
-
-In PokemonViewer, create a piece of state that will store a Pokemon.
+"We will be using our new found useEffect skills to make a random pokemon generator. We are going to make a component PokemonViewer, which will take in a prop of `id`. When the `id` prop changes, our component will perform an HTTP request to get the pokemon of that id, and then display the data"
 
 Within a useEffect, fetch a Pokemon from `https://pokeapi.co/api/v2/pokemon/${id}` and store
 the data in your piece of state. The useEffect should only re-run when the id changes.
 
-## Task 3:
+## Main Learning Points:
+Implementing useEffect to fetch data from an API within React.
+Using conditional rendering with a 'loading' state to show loading animation. 
+Fetch request is dynamic - 'id' state sets a random number between 1-150 using Math.random initial load.
+The 'id' state is then reset to a random number when 'Get Random Pokémon' button is pressed.
+Arrow buttons increment and decrement 'id' state +-1.
+Utilising the box model to build the Pokémon card graphics using CSS
+Uses a switch statement to  set the state for the background color of the card dependent on the pokemon 'type'.
 
-Display your data! You will find the name, as well as images within the response. Console.log is your friend!
-
-## Bonus:
-
-Make a starwars search!
-
-Have a component that takes in a search and displays the array of results from sending a request to this api:
-`https://swapi.dev/api/people?search={search}`
+Built with:
+HTML
+CSS
+JavaScript
+React
