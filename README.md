@@ -12,13 +12,13 @@ Within a useEffect, fetch a Pokemon from `https://pokeapi.co/api/v2/pokemon/${id
 the data in your piece of state. The useEffect should only re-run when the id changes.
 
 ## Main Learning Points:
-Implementing useEffect to fetch data from an API within React.
-Using conditional rendering with a 'loading' state to show loading animation. 
-Fetch request is dynamic - 'id' state sets a random number between 1-150 using Math.random initial load.
-The 'id' state is then reset to a random number when 'Get Random Pokémon' button is pressed.
-Arrow buttons increment and decrement 'id' state +-1.
-Utilising the box model to build the Pokémon card graphics using CSS
-Uses a switch statement to  set the state for the background color of the card dependent on the pokemon 'type'.
+- Implementing useEffect to fetch data from an API within React.
+- Using conditional rendering with a 'loading' state to show loading animation. 
+- Fetch request is dynamic - 'id' state sets a random number between 1-150 using Math.random initial load.
+- The 'id' state is then reset to a random number when 'Get Random Pokémon' button is pressed.
+- Arrow buttons increment and decrement 'id' state +-1.
+- Utilising the box model to build the Pokémon card graphics using CSS
+- Uses a switch statement to  set the state for the background color of the card dependent on the pokemon 'type'.
 
 Built with:
 HTML
