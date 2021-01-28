@@ -2,6 +2,8 @@
 
 Built during the React useEffect workshop at the School of Code
 
+![homepage-1](https://github.com/lukefantom/PokeGet/blob/main/public/Screen%20Shot%202021-01-28%20at%2012.47.31.png)
+
 ## Our brief
 
 "We will be using our new found useEffect skills to make a random pokemon generator. We are going to make a component PokemonViewer, which will take in a prop of `id`. When the `id` prop changes, our component will perform an HTTP request to get the pokemon of that id, and then display the data"
@@ -23,3 +25,7 @@ HTML
 CSS
 JavaScript
 React
+
+## Go get that Pokémon!
+
+![homepage-2](https://github.com/lukefantom/PokeGet/blob/main/public/Screen%20Shot%202021-01-28%20at%2012.47.43.png)
